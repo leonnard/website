@@ -1,0 +1,31 @@
+@import 'variables'
+
+section.intro
+  background: url('../images/mapbg.jpg') no-repeat center
+  background-size: cover
+  color: $white
+  
+  .intro-headline
+    line-height:1.1
+    font-size:1.8em 
+    
+    .hightlight
+      color:$highlight
+    
+  .intro-text
+    font-size:1em
+    line-height:1.5
+    
+@media screen and (min-width: 769px)
+  section.intro
+    padding:7em 1em 
+    
+    .intro-headline
+      font-size:2.7em
+      line-height:1
+      
+    .intro-text
+      font-size:1.2em
+      max-width:50%
+      line-height:1.3
+      margin-top:2em

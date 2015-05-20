@@ -1,0 +1,1 @@
+mogrify -resize 400 -quality 100 -path .. *.png

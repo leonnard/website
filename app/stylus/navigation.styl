@@ -1,0 +1,123 @@
+@import 'variables'
+
+nav
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  height: 50px
+  z-index: 200
+  color: white
+  -webkit-user-select: none
+  
+  .nav-content
+    max-width: 70em
+    margin:0 auto
+    padding: 0 1em
+    border-bottom:1px solid #eee
+
+  .mobile-burger
+    display: none
+    float: right
+    font-size: 2em
+    line-height: 50px
+    color: $grey
+    cursor: pointer
+    
+  .logo
+    font-family: $raleway
+    font-size: 1.5em
+    line-height: 50px
+    float: left
+    color: white
+    cursor: pointer
+    
+    img
+      width: 30px
+      line-height: 50px
+      display: block
+      float: left
+      margin-top: 9px
+      margin-right: 7px
+      
+  ul
+    list-style: none
+    padding: 0
+    line-height: 50px
+    font-family: $sans
+    margin: 0
+    float: right
+    box-sizing: border-box
+
+    li
+      cursor: pointer
+      margin-left:1em
+      float: left
+      line-height: 50px
+      cursor: pointer
+      box-sizing: border-box
+      transition: border-bottom-color .4s, color .4s
+      
+      &.active
+        color: $white
+        background: $red
+        
+    a, a:visited
+      float:left
+      text-decoration: none
+      color: darken($lightgrey, 30)
+      
+      &:hover
+        border-bottom-color: $grey
+        color: $grey
+
+  ul.lang
+    float: right
+    
+    li.selected
+      color: $red
+
+.mobile-nav
+  display: none
+  position: fixed
+  max-height: 100%
+  top: -500px
+  background: darken($white,5)
+  z-index: 100
+  transition: top .2s
+  box-sizing: border-box
+  width: 100%
+  padding: 0
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+      padding: 1em
+      cursor: pointer
+      text-align: center
+      text-transform: uppercase
+      font-weight: bold
+      border-bottom: 1px solid $lightgrey
+      a, a:visited
+        text-decoration: none
+      i
+        margin-left: .3em
+      &:hover
+        background: $white
+  
+@media screen and (max-width: 560px)
+  nav
+    .mobile-burger
+      display: block
+      
+    ul.navigation
+    ul.lang
+      display: none
+      
+  .mobile-nav
+    display: block
+    
+    &.active
+      top: 50px
+  
