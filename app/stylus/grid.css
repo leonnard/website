@@ -1,3 +1,40 @@
+/*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
+
+.grid {
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+
+
+    /*
+    Use flexbox when possible to avoid `letter-spacing` side-effects.
+    NOTE: Firefox (as of 25) does not currently support flex-wrap, so the
+    `-moz-` prefix version is omitted.
+    */
+
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+
+    /* IE10 uses display: flexbox */
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+    
+    /* Prevents distributing space between rows */
+    -ms-align-content: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+}
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.container {
+    word-spacing: -0.43em;
+}
+
 .col-1,
 .col-1-1,
 .col-1-2,
@@ -26,7 +63,6 @@
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
-    float: left;
 }
 
 .col-1-12 {
