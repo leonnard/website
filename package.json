@@ -24,6 +24,7 @@
     "gulp-webpack": "^0.4.1"
   },
   "dependencies": {
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "leaflet": "^0.7.3"
   }
 }
