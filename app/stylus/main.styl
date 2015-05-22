@@ -81,8 +81,7 @@ section
       float: right
 
 .btn
-  background: $white
-  border: 1px solid $grey
+  background: $greyBtn
   border-radius: 0
   color: $white
   font-size: 1em
@@ -94,23 +93,25 @@ section
   text-decoration: none
   display:block
   border: none
-  border-bottom: 5px solid $grey
+  border-bottom: 5px solid darken($greyBtn, 20)
+  transition: background .5s
   
   &:hover
-    background: darken($white, 20);
-    box-shadow: inset 3px 3px 2px rgba(0,0,0,.2)
+    background: darken($greyBtn, 10);
+    
+  &:active
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2)
+    
+  &:focus
+    outline: none
 
 .btn.yellow
   color: $black
   background: $highlight
-  border-bottom-color: darken($highlight, 15);
+  border-bottom-color: #BB9100
   
-.btn.grey
-  background: $greyBtn
-  border-bottom-color: darken($greyBtn, 15);
-    
-  &:focus
-    outline: none
+  &:hover
+    background: darken($highlight, 9)
     
   i
     margin-right: .3em
