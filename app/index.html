@@ -218,30 +218,39 @@
 
 
 <section class="contact">
-  <div class="container active">
-    <div class="section-headline">Contact</div>
+  <div class="container active grid">
+    <div class="section-headline col-12-12">Contact</div>
+      
+      <div class="col-12-12 col-md-6-12">
+        <form id="contact-form" action="http://v0.moritzklack.com/home/validate_contact" method="POST">
+            <textarea name="message" placeholder="Ihre Nachricht" class="msg-area"></textarea>
 
-      <form id="contact-form" action="http://v0.moritzklack.com/home/validate_contact" method="POST">
-          <textarea name="message" placeholder="Ihre Nachricht" class="msg-area"></textarea>
+            <div class="contact-exp">
+                <input name="email" type="text" class="email-field" placeholder="E-Mail">
 
-          <div class="contact-exp">
-              <input name="email" type="text" class="email-field" placeholder="E-Mail">
-
-              <div class="clearfix msg-wrapper">
-                  <button class="btn" type="submit">
-                      <i class="fa fa-spinner fa-spin"></i>
-                      <i class="fa fa-paper-plane-o"></i>Senden
-                  </button>
-                  <div class="msg-success"><i class="fa fa-check"></i> Vielen Dank für Ihre Nachricht!</div>
-                  <div class="msg-error"><i class="fa fa-times"></i> Bitte füllen Sie alle Felder aus.</div>
-              </div>
-          </div>
-      </form>
-
-      <ul class="contact-details">
-        <li><i class="fa fa-phone"></i>0176 638 658 71</li>
-        <li><i class="fa fa-envelope-o"></i>hi@webkid.io</li>
-      </ul>
+                <div class="clearfix msg-wrapper">
+                    <button class="btn" type="submit">
+                        <i class="fa fa-spinner fa-spin"></i>
+                        <i class="fa fa-paper-plane-o"></i>Send
+                    </button>
+                    <div class="msg-success"><i class="fa fa-check"></i> Vielen Dank für Ihre Nachricht!</div>
+                    <div class="msg-error"><i class="fa fa-times"></i> Bitte füllen Sie alle Felder aus.</div>
+                </div>
+            </div>
+        </form>
+      </div>
+      
+      <div class="col-12-12 col-md-6-12">
+        <div>We are always looking for interesting projects to work on. Please feel free to contact us.<br />
+          Our office is located in Berlin. Come around!</div>
+        <ul class="contact-details">
+          <li><strong>webkid GmbH</strong></li>
+          <li>Oranienstr. 19A</li>
+          <li>10999 Berlin</li>
+          <li><i class="fa fa-phone"></i>0176 638 658 71</li>
+          <li><i class="fa fa-envelope-o"></i>info@webkid.io</li>
+        </ul>
+      </div>
 
       <!--<div class="logo-wrapper">
         <canvas id="canvas"></canvas>
@@ -267,7 +276,7 @@
     <li>10999 Berlin</li>
   </ul>
   <ul class="contact">
-    <li>hi@webkid.io</li>
+    <li>info@webkid.io</li>
     <li>0176 638 658 71</li>
   </ul>
 </footer>
