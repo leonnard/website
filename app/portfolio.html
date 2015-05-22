@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html class="portfolio" lang="de">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,37 +26,85 @@
   <!-- End Piwik Code -->
 
 </head>
-<body>
+<body class="portfolio">
 
-<section class="intro">
+<section class="intro dark">
 
   <nav class="container">
     <div class="nav-content row twelve columns clearfix">
-      <div class="logo">WBKD</div>
-      
+      <a href="/"><div class="logo">WBKD<span class="port">Portfolio</span></div></a>
       <ul class="navigation">
-        <li data-href="projects">Portfolio</li>
-        <li data-href="team">Team</li>
-        <li data-href="contact">Kontakt</li>
+        <a href="/"><li>Home</li></a>
         <a href="http://blog.webkid.io"><li>Blog</li></a>
       </ul>
     </div>
   </nav>
 
-  <div class="container intro-box">
-    <h1 class="intro-headline"><span class="highlight">We create</span><br />Data Visualizations<br />Interactive Maps<br />Tools for Journalists</h1>
-    <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id iure deserunt, voluptatibus, neque minus, fuga sit dolores quaerat ullam dolorem numquam atque!</p>
-  </div>
 </section>
 
 <section class="projects">
 
-    <div class="container grid project-list clearfix">
+    <div class="container grid project-list">
 
-      <div class="headline-wrapper col-12-12 clearfix">
-        <div class="section-headline">Projects</div>
-        <button class="btn grey">see all</button>
-      </div>
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://interaktiv.morgenpost.de/wohnungspreis-karte-berlin/">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/wohnungspreise.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Kaufpreise in Berlin</h4>
+            <div class="project-text">This map shows how flat-prices in Berlin are rising.</div>
+          </div>
+        </div>
+      </a>
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://www.morgenpost.de/berlin/article137810495/Wie-sich-die-Masern-in-Berlins-Bezirken-ausbreiten.html?config=interactive">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/masern.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Masern in Berlin</h4>
+            <div class="project-text">How measles are spreading in Berlin</div>
+          </div>
+        </div>
+      </a>
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="https://github.com/wbkd/d3-extended">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/d3-extended.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">D3-extended</h4>
+            <div class="project-text">An extended version of the famous JavaScript library for visualization.</div>
+          </div>
+        </div>
+      </a>
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://interaktiv.morgenpost.de/mein-kriegsende-in-berlin/">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/kriegsende.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Mein Kriegsende in Berlin</h4>
+            <div class="project-text">Survivors are telling their story of how they experienced the end of WWII in Berlin.</div>
+          </div>
+        </div>
+      </a>
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://interaktiv.morgenpost.de/berlin-1945-2015/">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/1945-2015.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Berlin - 1945 und heute</h4>
+            <div class="project-text">See how Berlin has changed since the end of WWII.</div>
+          </div>
+        </div>
+      </a>
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="https://github.com/wbkd/react-starterkit">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/react-starterkit.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">React Starterkit</h4>
+            <div class="project-text">A lightweight starting point for web-applications with React.</div>
+          </div>
+        </div>
+      </a>
 
       <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="https://correctiv.org/recherchen/ttip/dealer/">
         <div class="project">
@@ -81,9 +129,19 @@
 
       <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://www.istderberschonfertig.de">
         <div class="project">
-          <div class="project-image" style="background-image:url(images/thumbs/berfertig.jpg)"></div>
+          <div class="project-image" style="background-image:url(images/thumbs/berfertig.png)"></div>
           <div class="project-info">
             <h4 class="project-headline">Ist der BER schon fertig</h4>
+            <div class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+        </div>
+      </a>
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://www.morgenpost.de/berlin/article135216607/Alle-Polizeimeldungen-sortiert-nach-Wohnort.html?config=interactive">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/polizeiticker.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Interaktiver Polizeiticker</h4>
             <div class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
           </div>
         </div>
@@ -138,7 +196,78 @@
           </div>
         </div>
       </a>
-    
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://mauerweg.morgenpost.de">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/berlin-iconfont.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Die Narbe der Stadt</h4>
+            <div class="project-text">Interactive journey along the Berlin Wall.</div>
+          </div>
+        </div>
+      </a>
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://apps.webkid.io/berlin-iconfont/">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/mauerweg.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Berlin Iconfont</h4>
+            <div class="project-text">Custom Iconfont with Berlin Shapes</div>
+          </div>
+        </div>
+      </a>
+
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://www.welt.de/autoatlas">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/autoatlas.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Alle Automarken und Modelle</h4>
+            <div class="project-text">How cars are distributed in Germany.</div>
+          </div>
+        </div>
+      </a>
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://unsichtbar.morgenpost.de">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/unsichtbar.jpg)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Unsichtbar</h4>
+            <div class="project-text">Homeless people tell their story.</div>
+          </div>
+        </div>
+      </a>
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://www.morgenpost.de/kriminalitaet-berlin">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/kriminalitaet.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Kriminalitätsatlas</h4>
+            <div class="project-text">Criminal statistics of Berlin visualised on a map.</div>
+          </div>
+        </div>
+      </a>
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://interaktiv.morgenpost.de/mietkarte-berlin">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/mietkarte.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Mietkarte</h4>
+            <div class="project-text">Map of rising rents in Berlin</div>
+          </div>
+        </div>
+      </a>
+
+      <a target="_blank" class="col-12-12 col-md-6-12 col-lg-3-12" href="http://www.morgenpost.de/feinstaub">
+        <div class="project">
+          <div class="project-image" style="background-image:url(images/thumbs/feinstaub.png)"></div>
+          <div class="project-info">
+            <h4 class="project-headline">Feinstaub Monitor</h4>
+            <div class="project-text">Particles in Berlin</div>
+          </div>
+        </div>
+      </a>
+
     </div>
 
 </section>
