@@ -98,22 +98,32 @@ section
   
   &:hover
     background: darken($white, 20);
+  
+  &:focus
+    outline: none
+
+  &:active
+    outline: none
     box-shadow: inset 3px 3px 2px rgba(0,0,0,.2)
+    
+  i
+    margin-right: .3em
+    font-size: 1em
 
 .btn.yellow
   color: $black
   background: $highlight
   border-bottom-color: darken($highlight, 15);
   
+  &:hover
+    border-bottom-color: darken($highlight, 25);
+    
 .btn.grey
   background: $greyBtn
   border-bottom-color: darken($greyBtn, 15);
-    
-  &:focus
-    outline: none
-    
-  i
-    margin-right: .3em
-    font-size: 1em
+  
+  &:hover
+    border-bottom-color: darken($greyBtn, 25);
+
         
 @import 'media-queries'

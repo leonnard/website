@@ -9,13 +9,32 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 25em){}
+@media (min-width: 27em)
+  section.clients
+    .client    
+      img
+        width: 90%
+        
+    .client.first
+      text-align: left
 
+    .client.last
+      text-align: right
+  
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 35em)
   section.contact
     .btn 
       width: auto
+  
+  section.clients
+    .client    
+      img
+        width: 85%
       
 /* Larger than tablet */
-@media (min-width: 64em){}
+@media (min-width: 64em)
+  section.clients
+    .client    
+      img
+        width: 60%
