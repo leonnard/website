@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:400,900');
+@import 'grid.css'
 @import 'font-awesome.css'
 @import 'normalize'
 @import 'helper'
@@ -33,7 +35,7 @@ a:hover
 body
   background:$black
   color: white
-  font-size: 1em
+  font-size: 16px
   line-height: 1.4
 
 .highlight
@@ -42,11 +44,7 @@ body
 section
   width: 100%
   position: relative
-  padding: 4em 1em 8em 1em
-  
-  .container
-    max-width:70em
-    margin:0 auto
+  padding: 2em 0
     
   .section-headline
     text-transform: uppercase
@@ -55,24 +53,33 @@ section
     font-size:1.8em
     margin:1em 0 1.5em 0
     color: $black
+  .headline-wrapper
+    margin: 1.5em 0 2.5em 0
+    .section-headline
+      float: left
+      margin: 0
+    button
+      float: right
 
 .btn
   background: $white
   border: 1px solid $grey
-  border-radius: 2px
-  color: $black
+  border-radius: 0
+  color: $white
   font-size: .9em
+  font-weight: 900
   padding: .4em 1em
   text-transform: uppercase
   text-align: center
   transition: background .3s, color .3s, border-color .3s
   text-decoration: none
   display:block
-  
-  &:hover
-    background: $black
-    color: $white
-    border-color: $black
+  border-bottom: 5px solid $grey
+.btn.yellow
+  background: $highlight
+.btn.grey
+  background: $grey
+  border-bottom-color: darken($grey, 20);
     
   &:focus
     outline: none

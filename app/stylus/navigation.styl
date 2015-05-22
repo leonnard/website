@@ -1,19 +1,20 @@
 @import 'variables'
 
-nav
+nav.container
   width: 100%
   position: absolute
   top: 0
   left: 0
+  right: 0
+  margin: auto
   height: 50px
   z-index: 200
   color: white
   -webkit-user-select: none
   
   .nav-content
-    max-width: 70em
     margin:0 auto
-    padding: 0 1em
+    padding: 0
     border-bottom:1px solid #eee
 
   .mobile-burger
@@ -25,7 +26,9 @@ nav
     cursor: pointer
     
   .logo
-    font-family: $raleway
+    font-family: $sans
+    font-weight: 900
+    text-transform: uppercase
     font-size: 1.5em
     line-height: 50px
     float: left
@@ -57,6 +60,7 @@ nav
       cursor: pointer
       box-sizing: border-box
       transition: border-bottom-color .4s, color .4s
+      margin-bottom: 0
       
       &.active
         color: $white

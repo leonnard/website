@@ -4,14 +4,9 @@ section.projects
   background $extralight
   color:$black
 
-  .project-list
-    margin-left:-1%
-
   .project  
     display:block
     border: 1px solid $lightgrey
-    width: 98%
-    margin: 1%
     background:white
     text-decoration:none
     box-shadow: 0 1px 2px rgba(50, 50, 50, .08)
@@ -31,47 +26,18 @@ section.projects
       padding:1em  
       
       .project-headline
-        margin:0 0 1em 0
+        font-size: 1.1em
+        font-weight: bold
+        margin:0 0 .8em 0
 
       .project-text
-        font-size: .9em
+        font-size: .8em
         line-height: 1.4
-  
-
-  .project-extra
-    margin-top:1em
-  
-    .project-extra-buttons
-      margin-top:2em
-      
-    .btn 
-      width:100%
-      margin-bottom:.5em
 
 @media screen and (min-width: 640px)
   section.projects
     .project
-      width: 48%
       float: left
       
       .project-info
         height:125px
-    
-    .project-extra
-      .btn 
-        width: auto
-        float:right
-        margin-left: .75em
-        
-@media screen and (min-width: 1000px)
-  section.projects
-    .project
-      width: 23%
-      
-    .project-extra
-      .project-extra-text
-        float:left
-        width:49%
-      
-      .project-extra-buttons
-        float:right
