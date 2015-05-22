@@ -1,11 +1,9 @@
 var $ = require('jquery');
 var utils = require('./utils');
 var nav = require('./nav');
-var projects = require('./projects');
 var contact = require('./contact');
 //var glitcher = require('./glitcher');
 
-projects.init();
 //glitcher.init(document.getElementById('canvas'));
 
 (function initEvents(window, document, $) {
