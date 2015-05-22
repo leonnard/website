@@ -26,6 +26,7 @@
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto;
+    float: left;
 }
 
 .col-1-12 {
@@ -96,7 +97,7 @@
     width: 100%;
 }
 
-@media screen and (min-width: 15em) {
+@media screen and (min-width: 25em) {
     .col-sm-1,
     .col-sm-1-1,
     .col-sm-1-2,
@@ -196,7 +197,7 @@
     }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 35em) {
     .col-md-1,
     .col-md-1-1,
     .col-md-1-2,
@@ -296,7 +297,7 @@
     }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 56em) {
     .col-lg-1,
     .col-lg-1-1,
     .col-lg-1-2,
@@ -392,106 +393,6 @@
     .col-lg-1,
     .col-lg-1-1,
     .col-lg-12-12 {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 80em) {
-    .col-xl-1,
-    .col-xl-1-1,
-    .col-xl-1-2,
-    .col-xl-1-3,
-    .col-xl-2-3,
-    .col-xl-1-4,
-    .col-xl-3-4,
-    .col-xl-1-6,
-    .col-xl-5-6,
-    .col-xl-1-12,
-    .col-xl-2-12,
-    .col-xl-3-12,
-    .col-xl-4-12,
-    .col-xl-5-12,
-    .col-xl-6-12,
-    .col-xl-7-12,
-    .col-xl-8-12,
-    .col-xl-9-12,
-    .col-xl-10-12,
-    .col-xl-11-12,
-    .col-xl-12-12 {
-        display: inline-block;
-        *display: inline;
-        zoom: 1;
-        letter-spacing: normal;
-        word-spacing: normal;
-        vertical-align: top;
-        text-rendering: auto;
-    }
-
-    .col-xl-1-12 {
-        width: 8.3333%;
-        *width: 8.3023%;
-    }
-
-    .col-xl-1-6,
-    .col-xl-2-12 {
-        width: 16.6667%;
-        *width: 16.6357%;
-    }
-
-    .col-xl-1-4,
-    .col-xl-3-12 {
-        width: 25%;
-        *width: 24.9690%;
-    }
-
-    .col-xl-1-3,
-    .col-xl-4-12 {
-        width: 33.3333%;
-        *width: 33.3023%;
-    }
-
-    .col-xl-5-12 {
-        width: 41.6667%;
-        *width: 41.6357%;
-    }
-
-    .col-xl-1-2,
-    .col-xl-6-12 {
-        width: 50%;
-        *width: 49.9690%;
-    }
-
-    .col-xl-7-12 {
-        width: 58.3333%;
-        *width: 58.3023%;
-    }
-
-    .col-xl-2-3,
-    .col-xl-8-12 {
-        width: 66.6667%;
-        *width: 66.6357%;
-    }
-
-    .col-xl-3-4,
-    .col-xl-9-12 {
-        width: 75%;
-        *width: 74.9690%;
-    }
-
-    .col-xl-5-6,
-    .col-xl-10-12 {
-        width: 83.3333%;
-        *width: 83.3023%;
-    }
-
-    .col-xl-11-12 {
-        width: 91.6667%;
-        *width: 91.6357%;
-    }
-
-    .col-xl-1,
-    .col-xl-1-1,
-    .col-xl-12-12 {
         width: 100%;
     }
 }
