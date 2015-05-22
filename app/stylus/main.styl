@@ -78,7 +78,7 @@ section
       float: left
       margin: 0
       
-    button
+    .extra-btn
       float: right
 
 .btn
@@ -98,24 +98,26 @@ section
   transition: background .5s
   
   &:hover
+    border-bottom-color: darken($greyBtn, 25);
     background: darken($greyBtn, 10);
     
   &:active
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.2)
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.2)
     
   &:focus
     outline: none
-
+    
+  i
+    margin-right: .3em
+    font-size: 1em  
+    
 .btn.yellow
   color: $black
   background: $highlight
   border-bottom-color: #BB9100
   
   &:hover
-    background: darken($highlight, 9)
+    border-bottom-color: darken($highlight, 25);
     
-  i
-    margin-right: .3em
-    font-size: 1em
-        
+
 @import 'media-queries'
