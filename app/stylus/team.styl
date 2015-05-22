@@ -1,26 +1,42 @@
 @import 'variables'
 
 section.team
-  background: $black
-  color: $white
+  background: $white
+  padding-bottom: 0
+  
   .section-headline
-    color:$white
+    color: $black
 
-.member
-  margin-bottom:4em
-  
-  .member-image
-    float:left
-    width:150px
-    max-width:50%
-    margin-right:1em
+  .col-6-12
+    padding-bottom: 0
+    text-align: center
+
+  .member
+    text-align: center
     
-  .member-name
-    font-weight:bold
-    font-size:22px  
+  .member-image
+    max-width: 100%
+    width: 300px
+    
+section.team-details
+  background: $black
+  margin-top: -50px
+  padding: 1em 0
   
-  .member-jobtitle
-    margin:.25em 0 1em 0
-
+  .member-details
+    text-align: center
+  
+  .member-name
+    color: $white
+    font-size: 1.4em
+    text-transform: uppercase
+    margin: 0
+  
+  .member-pos
+    color: $highlight
+    margin: .3em 0
+    
   .member-quote
-    max-width:800px
+    color: $white
+    max-width: 390px
+    margin: 1em auto
