@@ -78,6 +78,13 @@ gulp.task('fonts', function(cb) {
     .pipe(gulp.dest(dist + 'fonts/'));
 });
 
+// copy icon fonts
+gulp.task('htaccess', function(cb) {
+  return gulp.src(app + '.htaccess')
+    .pipe(gulp.dest(dist));
+});
+
+
 // watch styl, html and js file changes
 gulp.task('watch', function() {
   gulp.watch(app + 'stylus/*.styl', ['styles']);
@@ -94,7 +101,7 @@ gulp.task('deploy', function() {
         compress: true,
         progress: true,
         hostname: 'webkid@rigel.uberspace.de',
-        destination: '/home/webkid/webkid.io'
+        destination: '/home/webkid/html/webkid/'
       }));
 });
 
@@ -109,5 +116,5 @@ gulp.task('default', ['build', 'serve', 'watch']);
 
 // waits until clean is finished then builds the project
 gulp.task('build', ['clean'], function(){
-  gulp.start(['images','html','scripts','styles', 'fonts']);
+  gulp.start(['images','html','scripts','styles', 'fonts', 'htaccess']);
 });
