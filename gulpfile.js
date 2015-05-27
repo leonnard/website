@@ -93,13 +93,13 @@ gulp.task('deploy', function() {
         recursive: true,
         compress: true,
         progress: true,
-        hostname: 'moklick@ssh.alwaysdata.com',
-        destination: '/home/moklick/webkid/website'
+        hostname: 'webkid@rigel.uberspace.de',
+        destination: '/home/webkid/webkid.io'
       }));
 });
 
 
-// remove bundels
+// remove bundles
 gulp.task('clean', function(cb) {
   del([dist], cb);
 });
